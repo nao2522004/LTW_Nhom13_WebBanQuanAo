@@ -1,0 +1,87 @@
+/*====================== Css collect_intro ====================*/
+.collect_intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collect_intro-left {
+  margin-top: 3rem;
+}
+
+.collect-title {
+  font-size: 7rem;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--second-color);
+}
+
+.collect_title-small {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.collect-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.collect_intro-right {
+  padding: 5rem 0;
+}
+
+.collect_intro-img {
+  height: 40rem;
+  width: 65rem;
+  border-radius: 2rem;
+}
+
+/*====================== End collect_intro ====================*/
+.collect_marquee {
+  background-color: var(--black-color);
+  padding: 1rem 0;
+  color: var(--white-color);
+}
+
+.collect_marquee-logo {
+    position: relative;
+    font-size: 3rem;
+    left: 1rem;
+    top: 3.1rem;
+    text-shadow: 
+      4px 4px 4px #FFFFFF; /* Bóng trắng */
+  }
+  
+
+.collect_marquee-text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 110rem;
+  margin: 0 auto;
+}
+
+.collect_marquee-text p span{
+    padding: 0 4rem;
+}
+
+.collect_marquee-text p {
+  color: var(--white-color);
+  font-size: 2rem;
+  display: inline-block;
+  padding-left: 100%; /* Bắt đầu bên ngoài khung nhìn */
+  animation: marquee 10s linear infinite; /* Tốc độ chạy và lặp vô hạn */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
