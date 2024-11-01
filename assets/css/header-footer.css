@@ -27,6 +27,16 @@ header .part1 .group_icons .custom_size {
   font-size: 1.5rem;
   font-size: 2rem;
 }
+<<<<<<< HEAD
+=======
+header .part1 .group_icons a {
+  color: inherit;
+}
+header .part1 .group_icons a:hover{
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+>>>>>>> PhamQuocPhuongNam
 /* Part 2 */
 header .part2 ul {
   margin-bottom: 1.5rem;
