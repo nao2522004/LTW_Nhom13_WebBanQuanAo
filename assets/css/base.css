@@ -32,7 +32,7 @@ html {
   padding: 0;
 }
 
-.grid {
+.grid{
   width: 1350px;
   max-width: 100%;
   margin: 0 auto;
@@ -48,7 +48,7 @@ html {
   width: 100%;
 }
 
-.grid__row {
+.grid__row{
   display: flex;
   flex-wrap: wrap;
 }

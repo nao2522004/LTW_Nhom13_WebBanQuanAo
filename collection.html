@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/collection.css">
+    <link rel="stylesheet" href="./assets/css/header-footer.css">
+
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div class="collect">
+        <div class="container-fluid">
+
+            <div class="collect_intro grid">
+                <div class="collect_intro-left">
+                    <div class="collect-title">LASMANATE <span> FOR RUNNING</span></div>
+                    <div class="collect_title-small">Nguồn cảm hứng</div>
+                    <p class="collect-text">Thấu hiểu sâu sắc những vấn đề các runners gặp phải trên đường chạy,
+                        <br> LASMANATE FOR RUNNING với những công nghệ mới nhất #ChafeFree <br>#QuickDry #Ultralight,
+                        cùng sự kiểm nghiệm kỹ càng bởi các vận động viên chạy <br> Full Marathon chuyên nghiệp, sẽ mang
+                        lại cho các
+                        runners những trải nghiệm <br> chưa từng có trong mỗi sải chân.
+                    </p>
+                </div>
+                <div class="collect_intro-right">
+                    <img class="collect_intro-img" src="./assets/imgs/Collections/Img_title.webp" alt="Erro">
+                </div>
+            </div>
+
+            <div class="collect_marquee">
+                <div class="collect_marquee-logo">LASMANATE</div>
+                <div class="collect_marquee-text">
+                    <p>LASMANATE RUNNING<span> TRẢI NGHIỆM CHƯA TỪNG CÓ TRÊN SÂN </span> LASMANATE RUNNING</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer id="footer"></footer>
+
+
+    <script>
+        const header = document.getElementById('header');
+        const footer = document.getElementById('footer');
+        fetch('./assets/component/header.html').then(response => response.text()).then(html => header.innerHTML = html);
+        fetch('./assets/component/footer.html').then(response => response.text()).then(html => footer.innerHTML = html);
+    </script>
+</body>
+
+</html>
